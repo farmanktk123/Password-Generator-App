@@ -1,0 +1,179 @@
+@import "tailwindcss";
+.main-dev
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem;
+  padding: 10px;
+}
+
+.pswd-container
+{
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 2px solid lightslategray;
+  border-radius: 10px;
+}
+
+#main-heading
+{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin-top:2rem;
+  padding: 15px;
+  background-color: rgb(192, 204, 204);
+  color:blue;
+}
+
+#labeltext
+{
+  font-size: 20px;
+  font-weight: bold;
+  text-align:start;
+  margin-bottom: 8px;
+  color: blue;
+}
+
+.wrapperdev
+{
+  display: flex;
+}
+
+#input-pswd
+{
+  width: 400px;
+  background-color: grey;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 4px 0;
+  padding: 8px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  
+  
+}
+
+#copybtn
+{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color:blue;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 4px 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  animation: fadeIn 0.3s ease;
+
+}
+
+.descdev
+{
+  display: flex;
+  gap: 10px;
+  color: rgb(215, 144, 10);
+  font-weight: 600;
+
+}
+
+
+  button {
+   
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.3);
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(79, 70, 229, 0.2);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.25);
+  }
+  
+  button:disabled {
+    background-color: #b5b5b5;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+
+
+  .copy-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .copied-msg {
+    position: absolute;
+    bottom: 110%;      /* Button ke upar */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #16a34a;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .copied-msg::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #16a34a transparent transparent transparent;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
