@@ -13,14 +13,11 @@ function App() {
   // USEREF Hook
 
   const pswdRef = useRef(null);
-
-  const AllCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-
+  
   const generatePassword = useCallback(() => {
     let newpswd = "";
 
-
+    let AllCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     if(Numbers) AllCharacters += "0123456789";
     if(Char) AllCharacters += "!@#$%^&*()";
 
